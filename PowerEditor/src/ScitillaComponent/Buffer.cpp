@@ -1284,11 +1284,11 @@ bool FileManager::loadFileData(Document doc, const TCHAR * filename, char* data,
 	if (bufferSizeRequested > INT_MAX)
 	{
 		NativeLangSpeaker *pNativeSpeaker = (NppParameters::getInstance()).getNativeLangSpeaker();
-		pNativeSpeaker->messageBox("FileTooBigToOpen",
-										NULL,
-										TEXT("File is too big to be opened by Notepad++"),
-										TEXT("File size problem"),
-										MB_OK|MB_APPLMODAL);
+		//pNativeSpeaker->messageBox("FileTooBigToOpen",
+		//								NULL,
+		//								TEXT("File is too big to be opened by Notepad++"),
+		//								TEXT("File size problem"),
+		//								MB_OK|MB_APPLMODAL);
 
 		fclose(fp);
 		return false;
